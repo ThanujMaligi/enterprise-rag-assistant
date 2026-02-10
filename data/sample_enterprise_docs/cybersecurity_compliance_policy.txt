@@ -1,0 +1,14 @@
+ENTERPRISE CYBERSECURITY & DATA PROTECTION POLICY (SOC2 & ISO 27001 COMPLIANT)
+
+1. DATA ENCRYPTION MANDATES
+- Data at Rest: All storage volumes, vector database indices, and relational databases MUST be encrypted using AES-256 GCM encryption.
+- Data in Transit: TLS 1.3 is strictly enforced across all REST and gRPC API endpoints. Weak cipher suites are disabled.
+- Key Management: Hardware Security Modules (HSM) or AWS KMS with 90-day automatic key rotation.
+
+2. ACCESS CONTROL & AUTHENTICATION
+- Multi-Factor Authentication (MFA) is mandatory for 100% of internal employees and API service accounts.
+- Role-Based Access Control (RBAC) and Least Privilege Principle enforced via OAuth2 with JWT tokens (15-minute expiration).
+
+3. VULNERABILITY MANAGEMENT & RE-RANKING CONTROL
+- Continuous automated SAST/DAST security scanning integrated into CI/CD pipelines.
+- AI Hallucination Guardrails: All RAG model outputs must be strictly grounded in context sources to prevent security misinformation. Context re-ranking must be enabled for all production knowledge queries.
