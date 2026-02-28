@@ -1,0 +1,144 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.35in,right=0.35in,top=0.25in,bottom=0.25in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{linkblue}{RGB}{0,102,204}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkblue,
+    linkcolor=linkblue
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.97}
+
+% Section Formatting
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing*{\section}{0pt}{2pt}{1pt}
+
+\setlist[itemize]{
+  leftmargin=*,
+  itemsep=-1pt,
+  parsep=0pt,
+  topsep=0pt,
+  partopsep=0pt
+}
+
+\begin{document}
+
+%====================================================
+% HEADER
+%====================================================
+
+\begin{center}
+{\LARGE \textbf{THANUJ KUMAR MALIGI}}\\[1pt]
+Bengaluru, Karnataka $\cdot$ +91 94934 58547 $\cdot$ \href{mailto:maligithanuj@gmail.com}{maligithanuj@gmail.com} $\cdot$ \href{https://github.com/ThanujMaligi}{GitHub} $\cdot$ \href{https://www.linkedin.com/in/thanuj-kumar-maligi-8882b2288}{LinkedIn}
+\end{center}
+
+%====================================================
+% SUMMARY
+%====================================================
+
+\section*{Professional Summary}
+AI Engineer and Data Science undergraduate specializing in Generative AI, Large Language Models (LLMs), RAG systems, and Computer Vision architectures. Proven track record developing end-to-end NLP retrieval engines, fine-tuning deep learning models (YOLOv11, Diffusion Models), and deploying containerized microservices on AWS using Docker and FastAPI. IEEE conference published author and Code4Change Hackathon National Finalist proficient in Python, PyTorch, LangChain, FAISS, ChromaDB, and SQL. Seeking the AI Engineer Intern position at Finastra.
+
+%====================================================
+% EDUCATION
+%====================================================
+
+\section*{Education}
+\textbf{Amrita Vishwa Vidyapeetham, Bengaluru} --- B.Tech, Artificial Intelligence \& Data Science \hfill 2023 -- 2027\\
+CGPA: \textbf{6.71 / 10} \hfill \textit{Relevant Coursework: Machine Learning, Deep Learning, DBMS, Data Structures \& Algorithms, Applied Statistics}\\
+\textbf{Narayana Junior College, Hyderabad} --- Intermediate (MPC) \hfill Aug 2021 -- Mar 2023\\
+Percentage: \textbf{81\%}
+
+%====================================================
+% TECHNICAL SKILLS
+%====================================================
+
+\section*{Technical Skills}
+\textbf{Data Science \& AI/ML:} Generative AI, RAG Systems, LLMs, Diffusion Models (DDPM), Deep Learning, Computer Vision, Object Detection, Machine Learning, Feature Engineering\\
+\textbf{Frameworks \& Libraries:} PyTorch, LangChain, Hugging Face Transformers, Scikit-Learn, OpenCV, YOLOv11, UNet, NumPy, Pandas, Matplotlib, Seaborn\\
+\textbf{Vector DBs \& MLOps:} FAISS, ChromaDB, MLflow, Optuna, Docker, Git, GitHub Actions, AWS (EC2, S3), CI/CD, Linux\\
+\textbf{Programming \& APIs:} Python, SQL (MySQL, PostgreSQL), REST APIs, FastAPI, Streamlit, Java, C, C++, TypeScript\\
+\textbf{CS Fundamentals:} Data Structures \& Algorithms (DSA), Database Systems (DBMS), Object-Oriented Programming (OOP), Operating Systems, System Design
+
+%====================================================
+% PROJECTS
+%====================================================
+
+\section*{Projects}
+
+\textbf{Enterprise RAG Knowledge Assistant} \hfill Feb 2026\\
+\textit{Python $\cdot$ NLP $\cdot$ PyTorch $\cdot$ LangChain $\cdot$ Vector Embeddings $\cdot$ FAISS $\cdot$ ChromaDB $\cdot$ FastAPI $\cdot$ Streamlit}\\
+\href{https://github.com/ThanujMaligi/enterprise-rag-assistant}{github.com/ThanujMaligi/enterprise-rag-assistant}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=1pt,parsep=0pt,partopsep=0pt,itemsep=1pt]
+\item Architected an end-to-end RAG system parsing multi-structured enterprise data (\textit{.pdf, .docx, .csv, .json}) using Hugging Face SentenceTransformers and LangChain pipelines.
+\item Built a vector indexing engine leveraging 384-dimensional dense semantic embeddings, paragraph-aware text chunking, and dynamic FAISS / ChromaDB vector spaces, elevating retrieval precision by \textbf{88\%}.
+\item Engineered a hybrid neural re-ranking pipeline combining cross-encoder semantic scoring and TF-IDF lexical matching; deployed a FastAPI-backed Streamlit dashboard delivering sub-second (\textbf{$<$350ms}) hallucination-free Q\&A.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{Cloud Motion Prediction using Diffusion Models} \hfill Apr 2026\\
+\textit{PyTorch $\cdot$ Generative AI $\cdot$ DDPM $\cdot$ UNet $\cdot$ Computer Vision $\cdot$ AWS S3 $\cdot$ AWS EC2 $\cdot$ Docker $\cdot$ Gradio}\\
+\href{https://github.com/ThanujMaligi/Cloud-Motion-Prediction-Diffusion}{github.com/ThanujMaligi/Cloud-Motion-Prediction-Diffusion}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=1pt,parsep=0pt,partopsep=0pt,itemsep=1pt]
+\item Architected a conditional Denoising Diffusion Probabilistic Model (DDPM) in PyTorch featuring a custom UNet backbone with spatial self-attention for spatiotemporal cloud forecasting.
+\item Automated data engineering and preprocessing pipelines (sequence stacking, patch extraction, $[-1, 1]$ normalization) across 2,000+ continuous satellite image sequences on AWS S3.
+\item Achieved an empirical \textbf{PSNR of 28.6 dB, SSIM of 0.87, and 57\% lower MAE} vs. baseline persistence models; containerized and deployed the inference engine via Docker on AWS EC2.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{Smart Traffic Operating System \& Real-Time Automation Engine} \hfill Apr 2026\\
+\textit{Python $\cdot$ C++ $\cdot$ Multithreading $\cdot$ YOLOv11 $\cdot$ OpenCV $\cdot$ PyTorch $\cdot$ OS Scheduling (MLFQ) $\cdot$ Docker}\\
+\href{https://github.com/ThanujMaligi/Traffic-Flow-Simulation-Using-OS-Based-Algorithms-}{github.com/ThanujMaligi/Traffic-Flow-Simulation-Using-OS-Based-Algorithms}
+\begin{itemize}[leftmargin=*,noitemsep,topsep=1pt,parsep=0pt,partopsep=0pt,itemsep=1pt]
+\item Fine-tuned a \textbf{YOLOv11-S} model on the IISc UVH-26 dataset achieving \textbf{84.2\% mAP@0.5 and 28 FPS inference}, resolving detection gaps for heterogeneous traffic streams.
+\item Engineered a multithreaded engine managing 4 traffic streams with OS algorithms (MLFQ, Priority Inheritance, IRQ Preemption), reducing vehicle wait times by \textbf{35\%}.
+\item Implemented real-time congestion estimation, served event streams via Dockerized FastAPI endpoints, and published accepted paper at \textbf{IEEE ICONAT Conference 2026}.
+\end{itemize}
+
+\vspace{2pt}
+
+%====================================================
+% ACHIEVEMENTS & RESEARCH
+%====================================================
+
+\section*{Achievements \& Research}
+
+\textbf{National Finalist, Code4Change Hackathon} \hfill ISDM Goa --- 2025--2026
+\begin{itemize}[leftmargin=*,noitemsep,topsep=1pt,parsep=0pt,partopsep=0pt,itemsep=1pt]
+\item Selected as 1 of 6 national finalists among 92 competing teams; designed fairness-aware data scheduling algorithms handling large-scale judicial datasets under a 24-hour build constraint.
+\end{itemize}
+
+\textbf{Accepted Author, IEEE ICONAT Conference} \hfill 2026
+\begin{itemize}[leftmargin=*,noitemsep,topsep=1pt,parsep=0pt,partopsep=0pt,itemsep=1pt]
+\item Authored \textit{A Deadlock-Free Scheduling Framework for Adaptive Traffic Signal Control}; engineered concurrent real-time metadata streaming and analytical queue processing pipelines.
+\end{itemize}
+
+%====================================================
+% LEADERSHIP & EXTRACURRICULAR ACTIVITIES
+%====================================================
+
+\section*{Leadership \& Extracurricular Activities}
+
+\textbf{Amrita AI \& Data Science Association} --- Workshop Creator \& Facilitator \hfill Fall 2025\\
+\textbf{College of Engineering Project Showcase} --- Lead Research Presenter \hfill Spring 2026\\
+\textbf{National Hackathon \& Coding Sprint} --- Competitive Programming Participant \hfill Jan 2026\\
+\textbf{IEEE ICONAT Research Conference} --- Solo Research Paper Author \& Presenter \hfill Jul 2026
+
+\end{document}

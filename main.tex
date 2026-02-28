@@ -1,0 +1,142 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[left=0.35in,right=0.35in,top=0.25in,bottom=0.25in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{linkblue}{RGB}{0,102,204}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=linkblue,
+    linkcolor=linkblue
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{0.97}
+
+% Section Formatting
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}[\titlerule]
+
+\titlespacing*{\section}{0pt}{2pt}{1pt}
+
+\setlist[itemize]{
+  leftmargin=*,
+  itemsep=-1pt,
+  parsep=0pt,
+  topsep=0pt,
+  partopsep=0pt
+}
+
+\begin{document}
+
+%====================================================
+% HEADER
+%====================================================
+
+\begin{center}
+{\LARGE \textbf{THANUJ KUMAR MALIGI}}\\[1pt]
+Bengaluru, Karnataka $\cdot$ +91 94934 58547 $\cdot$ \href{mailto:maligithanuj@gmail.com}{maligithanuj@gmail.com} $\cdot$ \href{https://github.com/ThanujMaligi}{GitHub} $\cdot$ \href{https://www.linkedin.com/in/thanuj-kumar-maligi-8882b2288}{LinkedIn}
+\end{center}
+
+%====================================================
+% SUMMARY
+%====================================================
+
+\section*{Professional Summary}
+AI Engineer and Data Science undergraduate with hands-on experience building deep learning models, Computer Vision systems, Generative AI solutions (RAG, Diffusion Models), and high-performance tabular ML pipelines. Proficient in PyTorch, Scikit-Learn, LangChain, FAISS, XGBoost, MLflow, OpenCV, and cloud deployment (AWS, Docker, FastAPI). IEEE conference published author and Code4Change Hackathon National Finalist with a proven track record of delivering end-to-end production AI systems.
+
+%====================================================
+% EDUCATION
+%====================================================
+
+\section*{Education}
+\textbf{Amrita Vishwa Vidyapeetham, Bengaluru} --- B.Tech, Artificial Intelligence \& Data Science \hfill 2023 -- 2027\\
+CGPA: \textbf{6.71 / 10} \hfill \textit{Relevant Coursework: Machine Learning, Deep Learning, DBMS, Data Structures \& Algorithms, Applied Statistics}\\
+\textbf{Narayana Junior College, Hyderabad} --- Intermediate (MPC) \hfill Aug 2021 -- Mar 2023\\
+Percentage: \textbf{81\%}
+
+%====================================================
+% TECHNICAL SKILLS
+%====================================================
+
+\section*{Technical Skills}
+\textbf{Data Science \& AI/ML:} Machine Learning, Deep Learning, Computer Vision, Generative AI, RAG, LLMs, Diffusion Models (DDPM), Object Detection, Gradient Boosting (XGBoost, LightGBM), Feature Engineering, Model Fine-Tuning\\
+\textbf{Frameworks \& Libraries:} PyTorch, Scikit-Learn, LangChain, Hugging Face Transformers, OpenCV, YOLOv11, UNet, NumPy, Pandas, Matplotlib, Seaborn\\
+\textbf{Vector DBs \& MLOps:} FAISS, ChromaDB, MLflow, Optuna, Docker, Git, GitHub Actions, AWS (EC2, S3), CI/CD, Linux\\
+\textbf{Programming \& APIs:} Python, SQL (MySQL, PostgreSQL), REST APIs, FastAPI, Streamlit, Java, C, TypeScript\\
+\textbf{CS Fundamentals:} Data Structures \& Algorithms (DSA), Database Systems (DBMS), Object-Oriented Programming (OOP), Operating Systems, System Design
+
+%====================================================
+% PROJECTS
+%====================================================
+
+\section*{Projects}
+
+\textbf{Cloud Motion Prediction using Diffusion Models --- Lead Machine Learning Engineer} \hfill Apr 2026\\
+\textit{PyTorch $\cdot$ Diffusion Models (DDPM) $\cdot$ UNet $\cdot$ Computer Vision $\cdot$ Gradio $\cdot$ Docker $\cdot$ AWS S3 $\cdot$ \href{https://github.com/ThanujMaligi/Cloud-Motion-Prediction-Diffusion}{GitHub}}
+\begin{itemize}
+\item Architected a conditional Denoising Diffusion Probabilistic Model (DDPM) in PyTorch featuring a custom UNet backbone with spatial self-attention and $x_0$-clipped reverse ancestral sampling for spatiotemporal cloud motion forecasting.
+\item Built automated data engineering and preprocessing pipelines (temporal sequence stacking, patch extraction, $[-1, 1]$ normalization) across 2,000+ continuous satellite image sequences stored on AWS S3.
+\item Achieved an empirical \textbf{PSNR of 28.6 dB, SSIM of 0.87, and 57\% lower MAE} vs. baseline persistence models; containerized and deployed the model via Docker and Gradio on AWS EC2 for real-time inference.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{Enterprise RAG Knowledge Assistant --- Data Science Specialist \& AI Engineer} \hfill Feb 2026\\
+\textit{Python $\cdot$ PyTorch $\cdot$ NLP $\cdot$ SentenceTransformers $\cdot$ Vector Embeddings $\cdot$ FAISS $\cdot$ ChromaDB $\cdot$ Information Retrieval}
+\begin{itemize}
+\item Developed an end-to-end NLP Retrieval-Augmented Generation (RAG) system processing multi-structured data (\textit{.pdf, .docx, .csv, .json}) using PyTorch, Hugging Face SentenceTransformers, and LangChain pipelines.
+\item Built a vector indexing pipeline leveraging 384-dimensional dense semantic embeddings, paragraph-aware text chunking, and dynamic FAISS / ChromaDB vector spaces, elevating retrieval precision by \textbf{88\%}.
+\item Engineered a hybrid neural re-ranking pipeline combining cross-encoder semantic scoring and TF-IDF lexical matching; deployed a FastAPI-backed Streamlit dashboard evaluating Top-K cosine similarity distributions and sub-second (\textbf{$<$350ms}) hallucination-free Q\&A.
+\end{itemize}
+
+\vspace{2pt}
+
+\textbf{Smart Traffic Operating System --- Computer Vision \& AI Lead} \hfill Apr 2026\\
+\textit{YOLOv11 $\cdot$ OpenCV $\cdot$ PyTorch $\cdot$ Computer Vision $\cdot$ FastAPI $\cdot$ Docker $\cdot$ Automated Analytics $\cdot$ \href{https://github.com/ThanujMaligi/Traffic-Flow-Simulation-Using-OS-Based-Algorithms-}{GitHub}}
+\begin{itemize}
+\item Fine-tuned a YOLOv11-S object detector on the IISc UVH-26 Indian traffic dataset, achieving \textbf{84.2\% mAP@0.5 and 28 FPS inference}, resolving detection gaps for heterogeneous traffic (auto-rickshaws, two-wheelers).
+\item Engineered a multithreaded Computer Vision pipeline coupled with an occupancy-aware MLFQ signal scheduling algorithm, reducing average vehicle wait time by \textbf{35\%}.
+\item Implemented real-time congestion estimation algorithms and automated CSV data logging pipelines; containerized and served detection event streams via FastAPI endpoints wrapped in Docker.
+\end{itemize}
+
+\vspace{2pt}
+
+%====================================================
+% ACHIEVEMENTS & RESEARCH
+%====================================================
+
+\section*{Achievements \& Research}
+
+\textbf{National Finalist, Code4Change Hackathon} \hfill ISDM Goa --- 2025--2026
+\begin{itemize}
+\item Selected as 1 of 6 national finalists among 92 competing teams; designed fairness-aware data scheduling algorithms handling large-scale judicial datasets under a 24-hour build constraint.
+\end{itemize}
+
+\textbf{Accepted Author, IEEE ICONAT Conference} \hfill 2026
+\begin{itemize}
+\item Authored \textit{A Deadlock-Free Scheduling Framework for Adaptive Traffic Signal Control}; engineered concurrent real-time metadata streaming and analytical queue processing pipelines.
+\end{itemize}
+
+%====================================================
+% LEADERSHIP & EXTRACURRICULAR ACTIVITIES
+%====================================================
+
+\section*{Leadership \& Extracurricular Activities}
+
+\textbf{Academic Student Association} --- Workshop Creator \& Facilitator \hfill Fall 2025\\
+\textbf{City Tech \& AI Symposium} --- Poster Presenter \& Research Delegate \hfill Fall 2025\\
+\textbf{College of Engineering Project Showcase} --- Lead Research Presenter \hfill Spring 2026\\
+\textbf{National Hackathon \& Coding Sprint} --- Competitive Programming Participant \hfill Jan 2026\\
+\textbf{IEEE ICONAT Research Conference} --- Solo Research Paper Author \& Presenter \hfill Jul 2026
+
+\end{document}
